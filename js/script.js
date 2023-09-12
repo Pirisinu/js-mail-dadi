@@ -21,7 +21,6 @@ const nuovaEmail = prompt('Inserisci la tua email');
 let emailGiaPresente = false;
 
 //CICLO DI CONTROLLO EMAIL
-if (!emailGiaPresente){}
 for (let i = 0; i < emailPresenti.length; i++){
 
   if (nuovaEmail == emailPresenti[i]){

@@ -38,3 +38,23 @@ if (!emailGiaPresente){
   alert('Email registrata con successo')
   alert(emailPresenti.join(' -- '), 'La tua email è quella in fondo')
 } 
+
+/* 
+  ~~Svolgimento~~
+  - Creare due variabili con all'interno un generatore di numeri casuali con intervallo 1-6.
+  - Comparare i due risultati con un If per decretare il vincitore in base al numero piu alto
+*/
+
+let user = Math.ceil(Math.random() * 6);
+console.log(user + ' Risultato utente');
+
+let pc = Math.ceil(Math.random() * 6);
+console.log(pc + ' Risultato pc');
+
+if (user > pc){
+  console.log("ha vinto l'utente")
+} else if (user < pc) {
+  console.log("ha vinto il pc")
+} else {
+  console.log("ha vinto pareggio")
+}

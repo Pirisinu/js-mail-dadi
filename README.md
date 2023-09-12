@@ -14,4 +14,5 @@ stampa un messaggio appropriato sull’esito del controllo.
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
 - **Svolgimento**
- 
+  - Creare due variabili con all'interno un generatore di numeri casuali con intervallo 1-6.
+  - Comparare i due risultati con un If per decretare il vincitore in base al numero piu alto

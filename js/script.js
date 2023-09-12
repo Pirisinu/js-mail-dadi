@@ -22,14 +22,14 @@ let emailGiaPresente = false;
 
 //CICLO DI CONTROLLO EMAIL
 for (let i = 0; i < emailPresenti.length; i++){
-
+  
   if (nuovaEmail == emailPresenti[i]){
     console.log('errore');
     emailGiaPresente = true;
     alert('Email gia presente nel sistema')
     alert('Inserire una email differente da queste elencate  '+ emailPresenti.join(' -- '))
   }
-
+  
 }
 //INSERIMENTO IN ARRAY SE NON PRESENTE
 if (!emailGiaPresente){
@@ -37,24 +37,25 @@ if (!emailGiaPresente){
   console.log(emailPresenti)
   alert('Email registrata con successo')
   alert(emailPresenti.join(' -- '), 'La tua email è quella in fondo')
+  
+  //ESERCIZIO DADI
+  /* 
+    ~~Svolgimento~~
+    - Creare due variabili con all'interno un generatore di numeri casuali con intervallo 1-6.
+    - Comparare i due risultati con un If per decretare il vincitore in base al numero piu alto
+  */
+  
+  let user = Math.ceil(Math.random() * 6);
+  console.log(user + ' Risultato utente');
+  
+  let pc = Math.ceil(Math.random() * 6);
+  console.log(pc + ' Risultato pc');
+  
+  if (user > pc){
+    console.log("ha vinto l'utente")
+  } else if (user < pc) {
+    console.log("ha vinto il pc")
+  } else {
+    console.log("ha vinto pareggio")
+  }
 } 
-
-/* 
-  ~~Svolgimento~~
-  - Creare due variabili con all'interno un generatore di numeri casuali con intervallo 1-6.
-  - Comparare i due risultati con un If per decretare il vincitore in base al numero piu alto
-*/
-
-let user = Math.ceil(Math.random() * 6);
-console.log(user + ' Risultato utente');
-
-let pc = Math.ceil(Math.random() * 6);
-console.log(pc + ' Risultato pc');
-
-if (user > pc){
-  console.log("ha vinto l'utente")
-} else if (user < pc) {
-  console.log("ha vinto il pc")
-} else {
-  console.log("ha vinto pareggio")
-}
